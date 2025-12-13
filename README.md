@@ -44,12 +44,16 @@ Chisel 是一个 Solidity REPL（交互式解释器），用于快速测试和�
 - **学习工具**: 用于学习和理解 Solidity 语言特性
 - **原型开发**: 在正式开发前快速验证想法和概念
 
-## 文档
+## Foundry 文档
 
 https://book.getfoundry.sh/
 
-## 部署
+## 测试
+
+### 单元测试
+
+附带 Gas 消耗分析。
 
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+$ forge test --math-path "test/OptimizedContract.t.sol" --gas-report
 ```
