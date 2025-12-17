@@ -55,5 +55,5 @@ https://book.getfoundry.sh/
 附带 Gas 消耗分析。
 
 ```shell
-$ forge test --math-path "test/OptimizedContract.t.sol" --gas-report
+$ forge test --match-path "test/OptimizedContract.t.sol" --gas-report
 ```

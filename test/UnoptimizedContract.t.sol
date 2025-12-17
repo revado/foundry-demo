@@ -44,4 +44,10 @@ contract UnoptimizedContractTest is Test {
 		result = uc.multiplyBy16(1239804054054333);
 		assertEq(result, 19836864864869328);
 	}
+
+	function test_add() public view {
+		uint256 x = 55;
+		uint256 y = 19836864864869328;
+		assertEq(uc.add(x, y), 19836864864869383);
+	}
 }

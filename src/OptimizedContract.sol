@@ -35,4 +35,10 @@ contract OptimizedContract {
 	function multiplyBy16(uint256 x) public pure returns (uint256) {
 		return x << 4;
 	}
+
+	function add(uint256 x, uint256 y) public pure returns (uint256 z) {
+		unchecked {
+			require((z = x + y) >= x);
+		}
+	}
 }
